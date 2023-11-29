@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+    commands:
+      - npm install -g yarn   # Install Yarn globally
+      - yarn install          # Use Yarn to install project dependencies
+
+  build:
+    commands:
+      - yarn build            # Use Yarn for your build process
+
+artifacts:
+  files:
+    - '**/*'                # Include all files in the artifact
+  discard-paths: yes        # Discard the path information when creating the artifact

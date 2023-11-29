@@ -1,0 +1,5 @@
+# ts compiler
+dist/*
+
+# yarn
+node_modules/*
