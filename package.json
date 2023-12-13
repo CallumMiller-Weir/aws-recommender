@@ -4,13 +4,18 @@
     "description": "aws-recommender-service",
     "main": "dist/index.js",
     "scripts": {
-      "build": "tsc",
-      "start": "node dist/index.js"
+        "build": "rimraf -g 'node_modules' && tsc",
+        "test": "jest --coverage"
     },
     "dependencies": {
+        "jest": "^29.7.0",
+        "ts-jest": "^29.1.1",
+        "rimraf": "^5.0.5"
     },
     "devDependencies": {
-      "typescript": "^4.5.4"
+        "@types/aws-lambda": "^8.10.130",
+        "@types/jest": "^29.5.10",
+        "node-fetch": "^2.6.1",
+        "typescript": "^4.5.4"
     }
-  }
-  
+}

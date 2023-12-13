@@ -1,5 +1,11 @@
 # ts compiler
 dist/*
 
+# jest
+coverage/*
+test/coverage/*
+
 # yarn
 node_modules/*
+package-lock.json
+yarn-error.log
